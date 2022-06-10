@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'euro caps';
+  src: url('./assets/fonts/EUROCAPS.TTF');
+}
+
+html,body {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-700;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-600;
+}
+
+.range {
+  &::-webkit-slider-thumb {
+    @apply bg-orange-400 w-4 h-4;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &::-moz-range-thumb {
+    @apply bg-orange-400 w-4 h-4;
+    appearance: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &::-ms-thumb {
+    @apply bg-orange-400 w-4 h-4;
+    appearance: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+.frontier {
+  font-family: 'euro caps';
+}
